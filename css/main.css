@@ -103,10 +103,11 @@ html {
     padding: 2rem;
 }
 
-.video {
+#video {
     margin: 0 auto;
     text-align: center;
     padding: 2rem;
+    max-width: 500px;
 }
 
 
