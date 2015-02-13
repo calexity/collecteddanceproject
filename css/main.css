@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -56,31 +58,41 @@ table {
 
 html {
     background-color: #000;
-    color: #d3d3d3;
+    color: #8d8d8d;
     font-size: 62.5%;
+    font-weight: 400;
     line-height: 1.4;
 }
 
 body {
-    font-family: "Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    font-family: "Roboto", "Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
     font-size: 1.4rem;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
 }
 
 h1 {
     color: #4bc6c6;
     font-size: 4rem;
-    font-weight: bold;
     line-height: 5rem;
 }
 
 h2 {
     color: #ea6c4e;
     font-size: 3rem;
-    font-weight: bold;
     line-height: 4rem;
 }
 
-p {
+h3 {
+    color: #ea6c4e;
+    font-size: 3rem;
+    line-height: 3rem;
+    text-align: center;
+}
+
+p, li {
     font-size: 2rem;
     line-height: 3.5rem;
 }
@@ -138,16 +150,13 @@ textarea {
    Custom styles
    ========================================================================== */
 
-.main {
-    text-align: center;
-    margin: 10rem 5rem 5rem 5rem;
-    padding: 7rem;
+header {
+    padding: 1.5rem 0;
 }
 
 .nav ul {
     list-style: none;
     text-align: center;
-    padding: 0;
     margin: 0;
 }
 
@@ -159,13 +168,20 @@ textarea {
 .nav a {
     font-size: 1.5rem;
     text-decoration: none;
-    color: #d3d3d3;
+    color: #8d8d8d;
     display: block;
     transition: .3s background-color;
+    font-variant: small-caps;
+    font-weight: 700;
 }
 
 a:hover, a:active {
     border-bottom: 3px solid #4bc6c6;
+}
+
+.main {
+    text-align: center;
+    padding: 10rem 5rem;
 }
 
 #video {
@@ -175,9 +191,41 @@ a:hover, a:active {
     max-width: 500px;
 }
 
-.about, footer {
+.about, .rules, footer {
     margin: 0;
-    padding: 9rem;
+    padding: 7rem;
+}
+
+.rulelist ul {
+    padding: 1rem;
+}
+
+.rulelist li {
+    text-align: center;
+    padding: 1rem;
+}
+
+.dancers p {
+    text-align: center;
+}
+
+#leftdancers, #centerdancers, #rightdancers {
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem;
+}
+
+#leftdancers img,
+#rightdancers img,
+#centerdancers img {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.thanks p {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin: 1rem;
 }
 
 footer {
@@ -185,7 +233,20 @@ footer {
     color: #979797;
 }
 
-.twittershare {
+footer p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.fullWidth {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: initial;
+}
+
+.twittershare,
+.thanks a {
     color:inherit;
     text-decoration:none;
 }
